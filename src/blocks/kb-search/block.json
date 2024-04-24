@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "uw-madision/uw-kb-search",
+    "title": "UW Madison: Knowledge Base Search",
+    "category": "widgets",
+    "icon": "",
+    "description": "Searches the UW Madision KB API for articles. Users can select an article and add a link to the article, a summary and keywords to a Gutenberg block.",
+    "keywords": [
+        "University of Wisconsin Madision",
+        "KB",
+        "Knowledge Base"
+    ],
+    "version": "1.0.0",
+    "textdomain": "",
+    "editorScript": "file:./index.js",
+    "attributes": {
+        "limit": {
+            "type": "integer",
+            "default": 5
+        },
+        "exact": {
+            "type": "integer",
+            "default": 0
+        },
+        "mode": {
+            "type": "integer",
+            "default": 0
+        },
+        "sort": {
+            "type": "integer",
+            "default": 8
+        },
+        "articleId": {
+            "type": "string",
+            "default": ""
+        },
+        "articleUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "articleTitle" : {
+            "type": "string",
+            "default": ""
+        },
+        "summary": {
+            "type": "string",
+            "default": ""
+        },
+        "additionalContext": {
+            "type": "string",
+            "default": ""
+        },
+        "lastUpdated": {
+            "type": "string",
+            "default": ""
+        },
+        "created": {
+            "type": "string",
+            "default": ""
+        },
+        "keywords": {
+            "type": "string",
+            "default": ""
+        },
+        "views": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "style": "file:./index.css"
+}
